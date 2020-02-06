@@ -1,0 +1,39 @@
+// COLOR VARIABLES
+
+$color-primary: #d1c4e9;
+$color-primary-light: #fff7ff;
+$color-primary-dark: #a094b7;
+
+$color-secondary: #ff1744;
+$color-secondary-light: #ff616f;
+$color-secondary-dark: #c4001d;
+
+//FONTS
+$font-primary: "Raleway", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
+}
+
+body{
+  font-family: $font-primary;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 3rem;
+}

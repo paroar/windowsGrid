@@ -1,0 +1,30 @@
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+
+    &--heading{
+        margin-left: 3rem;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        &--img{
+            clip-path: circle();
+            width: 6rem;
+            height: auto;
+        }
+
+        &--heading{
+            margin-right: 3rem;
+        }
+    }
+
+    &__btn{
+        margin-left: 3rem;
+    }
+}
