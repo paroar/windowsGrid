@@ -1,15 +1,18 @@
 %heading{
-    font-family: $font-primary;
+    font-family: $font-secondary;
 }
 
 .heading-1{}
 .heading-2{
     @extend %heading;
     font-size: 2.8rem;
+    font-weight: 200;
 }
 .heading-3{
     @extend %heading;
     font-size: 1.8rem;
+    font-weight: 200;
+
 }
 .heading-4{}
 .heading-5{}

@@ -1,8 +1,8 @@
 // COLOR VARIABLES
 
-$color-primary: #d1c4e9;
-$color-primary-light: #fff7ff;
-$color-primary-dark: #a094b7;
+$color-primary: #F5F5F5	;
+$color-primary-light: #eeeeee;
+$color-primary-dark: #E0E0E0;
 
 $color-secondary: #ff1744;
 $color-secondary-light: #ff616f;
@@ -10,7 +10,7 @@ $color-secondary-dark: #c4001d;
 
 //FONTS
 $font-primary: "Raleway", sans-serif;
-
+$font-secondary: 'Bebas Neue', cursive;
 *,
 *::before,
 *::after {
@@ -30,7 +30,8 @@ body{
 
 .container {
   display: grid;
-  grid-template-rows: min-content 1fr;
+  grid-template-columns: [main-start] 20rem [content] 1fr [main-end];
+  grid-template-rows: repeat(4, min-content);
 }
 
 .btn {

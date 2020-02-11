@@ -1,8 +1,13 @@
+.header{
+    grid-column: main-start / main-end;
+}
+
 .menubar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-primary;
+    background-color: #ff6;
+    border-bottom: 1px solid rgba($color-primary-dark,.5);
 
     &--heading{
         margin-left: 3rem;

@@ -1,0 +1,15 @@
+.testimonies{
+    background-color: $color-primary-dark;
+
+    grid-column: content / main-end;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+
+    &>*{
+        padding: 2rem;
+        background-color: $color-primary;
+        font-size: 1.4rem;
+    }
+}
