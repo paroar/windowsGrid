@@ -1,0 +1,14 @@
+.products {
+  
+  &__img {
+    grid-column: full-start / col-start 5;
+    width: 100%;
+  }
+  &__info {
+    grid-column: col-start 5 / full-end;
+    padding: 5rem;
+    background: #1c1c17;
+    background-repeat: no-repeat;
+    color: white;
+  }
+}

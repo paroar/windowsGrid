@@ -1,15 +1,37 @@
 .testimonies{
-    background-color: $color-primary-dark;
-
-    grid-column: content / main-end;
-    padding: 5rem;
+    grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 5rem;
+    padding: 5rem 0;
 
     &>*{
-        padding: 2rem;
+        padding: 3rem;
         background-color: $color-primary;
         font-size: 1.4rem;
+        box-shadow: .4rem .4rem .4rem rgba(0,0,0, .1);
     }
+
+    &--art{
+        display: grid;
+        gap: 1rem;
+    }
+
+    &--author{
+        justify-self: flex-start;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+
+        &__img{
+            object-fit: cover;
+            width: 6rem;
+            height: 6rem;
+            clip-path: circle();
+            justify-self: flex-end;
+            align-self: flex-end;
+            margin-right: 1.5rem;
+        }
+    }
+
 }

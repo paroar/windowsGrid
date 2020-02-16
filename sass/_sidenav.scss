@@ -1,5 +1,5 @@
 .sidenav{
-    grid-column: main-start / content;
+    grid-column: sidebar-start / sidebar-end;
     grid-row: 2 / -1;
     background-color: #1c1c17;
     text-align: center;

@@ -1,4 +1,5 @@
 .gallery{
+    grid-column: full-start / full-end;
     display: flex;
 
     &>*{
