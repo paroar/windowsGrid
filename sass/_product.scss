@@ -2,13 +2,44 @@
   
   &__img {
     grid-column: full-start / col-start 5;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    background: url("./../img/pink.jpg");
+    background-size: cover;
+
+    &--img1{
+      width: 100%;
+      grid-column: 2 / 6;
+      grid-row: 2 / 6;
+    }
+    
+    &--img2{
+      width: 100%;
+      grid-column: 4 / -1;
+      grid-row: 3 / -1;
+      transform: translateX(5rem);
+    }
   }
+
+  &__text{
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
+
   &__info {
     grid-column: col-start 5 / full-end;
-    padding: 5rem;
+    padding: 6rem 12rem;
     background: #1c1c17;
     background-repeat: no-repeat;
     color: white;
+    display: grid;
+  }
+
+  &__btn{
+    justify-self: flex-start;
+    align-self: flex-start;
   }
 }
+

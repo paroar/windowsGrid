@@ -1,0 +1,10 @@
+.slider{
+    grid-column: full-start / full-end;
+    display: flex;
+
+    &>*{
+        width: 100%;
+        max-width: 1000rem;
+        height: auto;
+    }
+}

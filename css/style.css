@@ -15,7 +15,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [sidebar-start] 20rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: repeat(5, min-content); }
+  grid-template-rows: repeat(6, min-content); }
 
 .btn {
   border: none;
@@ -27,16 +27,29 @@ body {
     cursor: pointer;
     color: white; }
 
-.heading-2, .heading-3 {
-  font-family: "Bebas Neue", cursive; }
+.heading--2, .heading--3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400; }
 
-.heading-2 {
-  font-size: 2.8rem;
-  font-weight: 200; }
+.heading--2 {
+  font-size: 4rem;
+  line-height: 1; }
 
-.heading-3 {
+.heading--3 {
   font-size: 1.8rem;
   font-weight: 200; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
 
 .header {
   grid-column: sidebar-start / full-end; }
@@ -181,6 +194,14 @@ body {
       grid-row: 3 / 4;
       background-color: #3b5998; }
 
+.slider {
+  grid-column: full-start / full-end;
+  display: flex; }
+  .slider > * {
+    width: 100%;
+    max-width: 1000rem;
+    height: auto; }
+
 .sidenav {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 2 / -1;
@@ -226,19 +247,48 @@ body {
 
 .gallery {
   grid-column: full-start / full-end;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); }
   .gallery > * {
-    width: 100%;
-    max-width: 1000rem;
-    height: auto; }
+    width: 100%; }
+  .gallery--1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3; }
+  .gallery--2 {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3; }
 
 .products__img {
   grid-column: full-start / col-start 5;
-  width: 100%; }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  background: url("./../img/pink.jpg");
+  background-size: cover; }
+  .products__img--img1 {
+    width: 100%;
+    grid-column: 2 / 6;
+    grid-row: 2 / 6; }
+  .products__img--img2 {
+    width: 100%;
+    grid-column: 4 / -1;
+    grid-row: 3 / -1;
+    transform: translateX(5rem); }
+
+.products__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem; }
 
 .products__info {
   grid-column: col-start 5 / full-end;
-  padding: 5rem;
+  padding: 6rem 12rem;
   background: #1c1c17;
   background-repeat: no-repeat;
-  color: white; }
+  color: white;
+  display: grid; }
+
+.products__btn {
+  justify-self: flex-start;
+  align-self: flex-start; }
